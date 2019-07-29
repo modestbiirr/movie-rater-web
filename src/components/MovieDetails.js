@@ -18,7 +18,7 @@ export class MovieDetails extends Component {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Token 221a207f99065d11bf5a02c53253638be69de5ae"
+          Authorization: `Token ${this.props.token}`
         },
         body: JSON.stringify({ stars: stars + 1 })
       }

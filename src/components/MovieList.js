@@ -13,7 +13,7 @@ export default function MovieList(props) {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Token 221a207f99065d11bf5a02c53253638be69de5ae"
+        Authorization: `Token ${props.token}`
       }
     })
       .then(resp => props.movieDeleted(movie))
